@@ -15,8 +15,8 @@
       </div>
       <nav class="header-nav">
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="../index.html" class="text-goldenrod">Inicio</a></li>
+          <li><a href="./contacto.html" class="text-goldenrod">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -28,6 +28,11 @@
         action="https://formspree.io/f/mvzlrjdd"
         method="POST">
         <div class="form-campo">
+          <label for="nombre"> Tu Nombre y Apellido: </label>
+          <input id="nombre" type="text" name="nombre" required />
+        </div>
+
+        <div class="form-campo">
           <label for="email"> Tu email: </label>
           <input id="email" type="email" name="email" required />
         </div>
@@ -36,13 +41,11 @@
           <textarea id="message" name="message" required></textarea>
         </div>
 
-        <button class="btn" type="submit">
-          Enviar
-        </button>
+        <button class="btn" type="submit">Enviar</button>
       </form>
     </main>
 
-    <footer class="background-primary">
+    <footer class="background-primary text-goldenrod">
       <div class="div-redes">
         <p>Seguinos en:</p>
         <nav>
