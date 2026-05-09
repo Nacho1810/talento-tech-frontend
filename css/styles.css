@@ -20,6 +20,7 @@ body {
 }
 
 main {
+    min-width: 30rem;
     width: 80%;
     height: auto;
     margin: auto;
@@ -124,6 +125,10 @@ p {
 
 .background-secondary {
     background: url(../img/bg-chino.jpg);
+}
+
+.background-tertiary {
+    background-color: whitesmoke;
 }
 
 .text-darkblue {
