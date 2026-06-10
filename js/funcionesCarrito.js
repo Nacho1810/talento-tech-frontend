@@ -12,14 +12,16 @@ export const agregarProductoAlCarrito = (producto) => {
 
 export const eliminarProducto = (indiceProducto) => {
     const carrito = obtenerCarrito();
-    carrito.splice(indiceProducto,1);
+    carrito.splice(indiceProducto, 1);
     guardarCarrito(carrito);
 
     actualizarContador(carrito);
+    mostrarMensaje("El producto fue eliminado del carrito");
 };
 
 export const vaciarCarrito = () => {
     vaciarCarritoStorage();
     const carrito = obtenerCarrito();
     actualizarContador(carrito);
+    mostrarMensaje("El carrito fue vaciado");
 }

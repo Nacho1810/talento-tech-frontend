@@ -151,6 +151,14 @@ p {
     gap: 3rem;
 }
 
+.contenedor-carrito {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -158,6 +166,20 @@ p {
     align-items: center;
     gap: 0.5rem;
     width: 25rem;
+    height: 45rem;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardCarrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100vw;
     height: 45rem;
     overflow: hidden;
     background-color: whitesmoke;
