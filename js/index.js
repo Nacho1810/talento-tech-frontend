@@ -5,7 +5,7 @@ import { actualizarContador } from "./ui.js";
 console.log("JavaScript cargado correctamente");
 
 const productos = [
-    {id:1, nombre: "Desolorante", img:"img/desinfectante.png", precio: 5000},
+    {id:1, nombre: "Desinfectante", img:"img/desinfectante.png", precio: 5000},
     {id:2, nombre: "Vino", img:"img/vino-dada.jpeg", precio: 5000},
     {id:3, nombre: "Figuritas", img:"img/figuritas-mundial.jpeg", precio: 5000},
     {id:4, nombre: "Pritty", img:"img/pritty-limon.jpeg", precio: 5000},
