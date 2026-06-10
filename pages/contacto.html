@@ -1,64 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body class="background-secondary">
-    <header class="background-primary">
-      <div class="div-logo">
-        <a href="../index.html"
-          ><img src="../img/logo_chino_feliz.png" alt="Logo Chino Feliz"
-        /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body class="background-secondary">
+  <header class="background-primary">
+    <div class="div-logo">
+      <a href="../index.html"><img src="../img/logo_chino_feliz.png" alt="Logo Chino Feliz" /></a>
+    </div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="../index.html" class="text-goldenrod">Inicio</a></li>
+        <li><a href="./contacto.html" class="text-goldenrod">Contacto</a></li>
+
+        <li><a href="./carrito.html" class="text-goldenrod">Mi Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="background-tertiary">
+    <h1 class="titulo-contacto text-goldenrod">Contactanos</h1>
+    <form class="form-contacto" action="https://formspree.io/f/mvzlrjdd" method="POST">
+      <div class="form-campo">
+        <label for="nombre"> Tu Nombre y Apellido: </label>
+        <input id="nombre" type="text" name="nombre" required />
       </div>
-      <nav class="header-nav">
+
+      <div class="form-campo">
+        <label for="email"> Tu email: </label>
+        <input id="email" type="email" name="email" required />
+      </div>
+      <div class="form-campo">
+        <label for="message"> Tu Mensaje: </label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer class="background-primary text-goldenrod">
+    <div class="div-redes">
+      <p>Seguinos en:</p>
+      <nav>
         <ul>
-          <li><a href="../index.html" class="text-goldenrod">Inicio</a></li>
-          <li><a href="./contacto.html" class="text-goldenrod">Contacto</a></li>
+          <!--iconos creados por Ruslan Babkin - Flaticon-->
+          <li><img src="../img/facebook.png" alt="Logo Facebook" /></li>
+          <li><img src="../img/instagram.png" alt="Logo Instagram" /></li>
+          <li><img src="../img/tik-tok.png" alt="Logo Tik Tok" /></li>
+          <li><img src="../img/youtube.png" alt="Logo Youtube" /></li>
         </ul>
       </nav>
-    </header>
+    </div>
+    <p>Copyright Chino Feliz - 2026. Todos los derechos reservados.</p>
+  </footer>
+</body>
 
-    <main class="background-tertiary">
-      <h1 class="titulo-contacto text-goldenrod">Contactanos</h1>
-      <form
-        class="form-contacto"
-        action="https://formspree.io/f/mvzlrjdd"
-        method="POST">
-        <div class="form-campo">
-          <label for="nombre"> Tu Nombre y Apellido: </label>
-          <input id="nombre" type="text" name="nombre" required />
-        </div>
-
-        <div class="form-campo">
-          <label for="email"> Tu email: </label>
-          <input id="email" type="email" name="email" required />
-        </div>
-        <div class="form-campo">
-          <label for="message"> Tu Mensaje: </label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <button class="btn" type="submit">Enviar</button>
-      </form>
-    </main>
-
-    <footer class="background-primary text-goldenrod">
-      <div class="div-redes">
-        <p>Seguinos en:</p>
-        <nav>
-          <ul>
-            <!--iconos creados por Ruslan Babkin - Flaticon-->
-            <li><img src="../img/facebook.png" alt="Logo Facebook" /></li>
-            <li><img src="../img/instagram.png" alt="Logo Instagram" /></li>
-            <li><img src="../img/tik-tok.png" alt="Logo Tik Tok" /></li>
-            <li><img src="../img/youtube.png" alt="Logo Youtube" /></li>
-          </ul>
-        </nav>
-      </div>
-      <p>Copyright Chino Feliz - 2026. Todos los derechos reservados.</p>
-    </footer>
-  </body>
 </html>
