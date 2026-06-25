@@ -11,7 +11,7 @@ html {
 body {
     font-family: "Playfair Display", serif;
     font-size: 1.6rem;
-    background: url(../img/bg-chino.jpg);
+    background-color: whitesmoke;
 
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ main {
     height: auto;
     margin: auto;
     padding-bottom: 3rem;
+    
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -68,7 +69,6 @@ h2 {
 
 p {
     font-size: 1.5rem;
-    padding: 1rem;
 }
 
 .btn {
@@ -127,6 +127,9 @@ p {
     background-color: royalblue;
 }
 
+.background-tertiary {
+    background: url(../img/bg-chino.jpg);
+}
 
 .text-darkblue {
     color: darkblue;
@@ -134,26 +137,6 @@ p {
 
 .text-goldenrod {
     color: goldenrod;
-}
-
-.card {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    width: 25rem;
-    height: 50rem;
-    overflow: hidden;
-    background-color: whitesmoke;
-    border-radius: 1rem;
-    padding-bottom: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.card img {
-    width: 100%;
-    object-fit: cover;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -168,16 +151,47 @@ p {
     gap: 3rem;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                   CARRITO                                  */
-/* -------------------------------------------------------------------------- */
-
 .contenedor-carrito {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 3rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 25rem;
+    height: 45rem;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardCarrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100vw;
+    height: 45rem;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* -------------------------------------------------------------------------- */

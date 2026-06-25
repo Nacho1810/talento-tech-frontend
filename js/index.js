@@ -5,7 +5,7 @@ import { actualizarContador } from "./ui.js";
 console.log("JavaScript cargado correctamente");
 
 const productos = [
-    {id:1, nombre: "Desinfectante", img:"img/desinfectante.png", precio: 5000},
+    {id:1, nombre: "Desinfectante", img:"img/desinfectante.png", precio: 5000, descripcion:"Desinfectante Lisoform elimina el 99,99% de los gérmenes"},
     {id:2, nombre: "Vino", img:"img/vino-dada.jpeg", precio: 5000},
     {id:3, nombre: "Figuritas", img:"img/figuritas-mundial.jpeg", precio: 5000},
     {id:4, nombre: "Pritty", img:"img/pritty-limon.jpeg", precio: 5000},
@@ -32,6 +32,9 @@ export const renderizarProductos = () => {
         const nombre = document.createElement("h3");
         nombre.textContent = producto.nombre;
 
+        const descripcion = document.createElement("p");
+        descripcion.textContent = producto.descripcion;
+
         const boton = document.createElement("button");
         boton.classList.add("btn");
         boton.textContent = "Agregar al carrito";
@@ -42,6 +45,7 @@ export const renderizarProductos = () => {
         tarjetaProducto.appendChild(nombre);
         tarjetaProducto.appendChild(img);
         tarjetaProducto.appendChild(precio);
+        tarjetaProducto.appendChild(descripcion);
         tarjetaProducto.appendChild(boton);
 
         contenedorProductos.appendChild(tarjetaProducto);
