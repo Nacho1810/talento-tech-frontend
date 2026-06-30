@@ -162,7 +162,7 @@ p {
     object-fit: cover;
 }
 
-.contenedor-productos {
+.contenedor-cards {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -174,13 +174,7 @@ p {
 /*                                   CARRITO                                  */
 /* -------------------------------------------------------------------------- */
 
-.contenedor-carrito {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                  CONTACTOS                                 */
