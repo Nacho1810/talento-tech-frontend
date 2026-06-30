@@ -82,6 +82,10 @@ p {
     cursor: pointer;
 }
 
+.logo-carrito img{
+    width: 3rem;
+}
+
 .div-logo a img {
     width: 10rem;
     border-radius: 1rem;
@@ -94,7 +98,7 @@ p {
 
 .div-redes {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding: 2rem;
     gap: 1rem;
 }

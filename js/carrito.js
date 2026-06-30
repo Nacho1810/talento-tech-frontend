@@ -1,6 +1,6 @@
-import { guardarCarrito, obtenerCarrito, vaciarCarritoStorage } from "./storage.js"
+import { guardarCarrito, obtenerCarrito } from "./storage.js"
 import { actualizarContador, mostrarMensaje } from "./ui.js";
-import { eliminarProducto } from "./funcionesCarrito.js";
+import { eliminarProducto, vaciarCarrito } from "./funcionesCarrito.js";
 
 export const renderizarProductosDelCarrito = () => {
 
@@ -47,7 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 document.getElementById("btn-vaciar-carrito").addEventListener("click", () => {
-    vaciarCarritoStorage();
+    vaciarCarrito();
     renderizarProductosDelCarrito();
     actualizarContador(obtenerCarrito());
 });
+
+// if (localStorage.length > 0) {
+//     const btnVaciarCarrito = document.createElement("button");
+//     btnVaciarCarrito.textContent = "Vaciar Carrito"
+//     btnVaciarCarrito.classList.add("btn");
+//     btnVaciarCarrito.addEventListener("click", () => {
+//         vaciarCarritoStorage();
+//         renderizarProductosDelCarrito();
+//         actualizarContador(obtenerCarrito());
+//     });
+//     document.getElementById("acciones-carrito").appendChild(btnVaciarCarrito)
+// }

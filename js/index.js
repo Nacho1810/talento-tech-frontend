@@ -12,6 +12,8 @@ const productos = [
     {id:5, nombre: "Yerba Mate", img:"img/yerba-mate.jpg", precio: 5000},
 ];
 
+fetch()
+
 export const renderizarProductos = () => {
 
     const contenedorProductos = document.getElementById("contenedor-productos");

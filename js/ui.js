@@ -4,7 +4,7 @@ export const actualizarContador = (carrito) => {
     contador.textContent = carrito.length;
   }
 };
-// Va a servir cuando agregamos librerias
+
 export const mostrarMensaje = (mensaje) => {
     alert(mensaje);
 };

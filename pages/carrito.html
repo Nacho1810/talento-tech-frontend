@@ -19,21 +19,25 @@
             <ul>
                 <li><a href="../index.html" class="text-goldenrod">Inicio</a></li>
                 <li><a href="./contacto.html" class="text-goldenrod">Contacto</a></li>
-                <li><a href="./carrito.html" class="text-goldenrod">Mi Carrito</a></li>
+                <li class="logo-carrito"><a href="./carrito.html" class="text-goldenrod">
+                        <img src="../img/shopping-cart.png" alt="Logo Carrito" />
+                        <span id="contador-carrito"></span></a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main class="background-primary">
         <h1 class="titulo-inicio text-goldenrod">El Chino Feliz</h1>
+        <h2 class="text-darkblue">Mi Carrito</h2>
 
-        <section>
-            <h2 class="text-darkblue">Mi Carrito</h2>
-            <div id="contenedor-carrito" class="contenedor-cards">
-                <!-- Productos renderizados por JS -->
-            </div>
+        <section id="contenedor-carrito" class="contenedor-cards">
+            <!-- Productos renderizados por JS -->
         </section>
-        <button id="btn-vaciar-carrito" class="btn">Vaciar Carrito</button>
+
+        <div id="acciones-carrito">
+            <button id="btn-vaciar-carrito" class="btn">Vaciar Carrito</button>
+        </div>
     </main>
 
     <footer class="background-secondary text-goldenrod">
