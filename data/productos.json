@@ -1,7 +1,37 @@
 [
-    {"id":1, "nombre": "Desinfectante", "img":"img/desinfectante.png", "precio": 5000, "descripcion":"Desinfectante Lisoform elimina el 99,99% de los gérmenes"},
-    {"id":2, "nombre": "Vino", "img":"img/vino-dada.jpeg", "precio": 5000},
-    {"id":3, "nombre": "Figuritas", "img":"img/figuritas-mundial.jpeg", "precio": 5000},
-    {"id":4, "nombre": "Pritty", "img":"img/pritty-limon.jpeg", "precio": 5000},
-    {"id":5, "nombre": "Yerba Mate", "img":"img/yerba-mate.jpg", "precio": 5000}
+    {
+        "id": 1, 
+        "nombre": "Desinfectante Lysoform", 
+        "img": "img/desinfectante.png", 
+        "precio": 5000, 
+        "descripcion": "Desinfectante Lisoform elimina el 99,99% de los gérmenes y bacterias. Protege tu hogar de forma efectiva y duradera."
+    },
+    {
+        "id": 2, 
+        "nombre": "Vino Tinto Dada", 
+        "img": "img/vino-dada.jpeg", 
+        "precio": 5000, 
+        "descripcion": "Vino tinto Dada Reserva, elaborado con uvas Malbec de alta calidad. Notas a frutos rojos y especias, con un final suave y persistente. Perfecto para acompañar carnes rojas y pastas."
+    },
+    {
+        "id": 3, 
+        "nombre": "Paquete de Figuritas", 
+        "img": "img/figuritas-mundial.jpeg", 
+        "precio": 5000, 
+        "descripcion": "Paquete de figuritas del Mundial 2026, completa tu colección con los mejores jugadores, ideal para intercambiar con amigos y familiares."
+    },
+    {
+        "id": 4, 
+        "nombre": "Gaseosa Pritty", 
+        "img": "img/pritty-limon.jpeg", 
+        "precio": 5000, 
+        "descripcion": "Gaseosa Pritty sabor limón, refrescante y burbujeante. La bebida ideal para los días calurosos, con el equilibrio perfecto entre dulzor y acidez. Libre de conservantes artificiales."
+    },
+    {
+        "id": 5, 
+        "nombre": "Yerba Buenas y Santas", 
+        "img": "img/yerba-mate.jpg", 
+        "precio": 5000, 
+        "descripcion": "Yerba Mate Buenas y Santas. Sin aromatizantes ni conservantes. Yerba con hierbas. Nada más Nuestra selección de hierbas Su sabor es cálido y picante, con un regusto refrescante. Tiene un sabor versátil que permite las combinaciones más interesantes."
+    }
 ]

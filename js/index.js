@@ -9,7 +9,7 @@ export const renderizarProductos = () => {
     const contenedorProductos = document.getElementById("contenedor-productos");
     contenedorProductos.innerHTML = "";
 
-    fetch("../data/productos.json")
+    fetch("data/productos.json")
         .then((respuesta) => respuesta.json())
         .then((productos) => productos
             .forEach((producto) => {

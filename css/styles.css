@@ -153,7 +153,7 @@ p {
     align-items: center;
     gap: 0.5rem;
     width: 25rem;
-    height: 50rem;
+    height: auto;
     overflow: hidden;
     background-color: white;
     border-radius: 1rem;
@@ -164,6 +164,11 @@ p {
 .card img {
     width: 100%;
     object-fit: cover;
+}
+
+.card p {
+    font-weight: 100;
+    font-size: small;
 }
 
 .contenedor-cards {
