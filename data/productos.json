@@ -1,0 +1,7 @@
+[
+    {"id":1, "nombre": "Desinfectante", "img":"img/desinfectante.png", "precio": 5000, "descripcion":"Desinfectante Lisoform elimina el 99,99% de los gérmenes"},
+    {"id":2, "nombre": "Vino", "img":"img/vino-dada.jpeg", "precio": 5000},
+    {"id":3, "nombre": "Figuritas", "img":"img/figuritas-mundial.jpeg", "precio": 5000},
+    {"id":4, "nombre": "Pritty", "img":"img/pritty-limon.jpeg", "precio": 5000},
+    {"id":5, "nombre": "Yerba Mate", "img":"img/yerba-mate.jpg", "precio": 5000}
+]
