@@ -16,6 +16,7 @@ export const renderizarProductosDelCarrito = () => {
         contenedorCarrito.appendChild(mensaje);
         return;
     }
+    let sumaPrecioProductos = 0;
 
     productosCarrito.forEach((producto, i) => {
         const productoCarrito = document.createElement("article");
@@ -31,6 +32,7 @@ export const renderizarProductosDelCarrito = () => {
         const precio = document.createElement("div");
         precio.classList.add("div-price")
         precio.textContent = `$${producto.price.toLocaleString()}`;
+        sumaPrecioProductos += producto.price;
 
         const boton = document.createElement("button");
         boton.classList.add("btn");
@@ -46,11 +48,11 @@ export const renderizarProductosDelCarrito = () => {
         productoCarrito.appendChild(boton);
 
         contenedorCarrito.appendChild(productoCarrito);
-
     });
+
     const btnVaciarCarrito = document.createElement("button");
     btnVaciarCarrito.textContent = "Vaciar Carrito"
-    btnVaciarCarrito.classList.add("btn");
+    btnVaciarCarrito.classList.add("btn", "background-secondary");
     btnVaciarCarrito.addEventListener("click", () => {
         vaciarCarritoStorage();
         renderizarProductosDelCarrito();
@@ -62,6 +64,17 @@ export const renderizarProductosDelCarrito = () => {
         actualizarContador(obtenerCarrito())
     })
     document.getElementById("acciones-carrito").appendChild(btnVaciarCarrito)
+
+    const precioTotal = document.createElement("span");
+    precioTotal.textContent = `Total: $${sumaPrecioProductos.toFixed(2)}`;
+    precioTotal.classList.add("precio-total");
+    document.getElementById("acciones-carrito").appendChild(precioTotal);
+
+    const btnFinalizarCompra = document.createElement("button");
+    btnFinalizarCompra.textContent = "Pasar a Finalizar Compra"
+    btnFinalizarCompra.classList.add("btn");
+    document.getElementById("acciones-carrito").appendChild(btnFinalizarCompra)
+
 
 };
 

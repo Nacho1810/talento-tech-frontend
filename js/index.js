@@ -4,8 +4,7 @@ import { actualizarContador } from "./ui.js";
 
 console.log("JavaScript cargado correctamente");
 
-export const renderizarProductosData = () => {
-
+export const renderizarProductosInicio = () => {
     const contenedorProductos = document.getElementById("contenedor-productos");
     contenedorProductos.innerHTML = "";
 
@@ -51,7 +50,7 @@ export const renderizarProductosData = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    renderizarProductosData();
+    renderizarProductosInicio();
     const carrito = obtenerCarrito();
     actualizarContador(carrito)
 })

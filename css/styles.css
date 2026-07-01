@@ -98,7 +98,7 @@ p {
 
 .div-redes {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding: 2rem;
     gap: 1rem;
 }
@@ -210,7 +210,7 @@ p {
 .cardCarrito img {
     width: 50%;
     object-fit: cover;
-    max-height: 20rem;
+    max-height: 15rem;
 }
 
 .cardCarrito button {
@@ -223,6 +223,19 @@ p {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 3rem;
+}
+
+.precio-total {
+    margin: 1rem;
+}
+
+.acciones-carrito {
+    width:100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 /* -------------------------------------------------------------------------- */
