@@ -4,12 +4,12 @@ import { actualizarContador } from "./ui.js";
 
 console.log("JavaScript cargado correctamente");
 
-export const renderizarProductos = () => {
+export const renderizarProductosData = () => {
 
     const contenedorProductos = document.getElementById("contenedor-productos");
     contenedorProductos.innerHTML = "";
 
-    fetch("data/productos.json")
+    fetch("https://fakestoreapi.com/products")
         .then((respuesta) => respuesta.json())
         .then((productos) => productos
             .forEach((producto) => {
@@ -17,18 +17,18 @@ export const renderizarProductos = () => {
                 tarjetaProducto.classList.add("card");
 
                 const nombre = document.createElement("h3");
-                nombre.textContent = producto.nombre;
+                nombre.textContent = producto.title;
 
                 const img = document.createElement("img");
-                img.src = `./${producto.img}`
-                img.alt = producto.nombre;
+                img.src = `${producto.image}`
+                img.alt = producto.title;
 
                 const precio = document.createElement("div");
                 precio.classList.add("div-price")
-                precio.textContent = `$${producto.precio.toLocaleString()}`;
+                precio.textContent = `$${producto.price.toLocaleString()}`;
                 
                 const descripcion = document.createElement("p");
-                descripcion.textContent = producto.descripcion;
+                descripcion.textContent = producto.description;
 
                 const boton = document.createElement("button");
                 boton.classList.add("btn");
@@ -45,12 +45,13 @@ export const renderizarProductos = () => {
 
                 contenedorProductos.appendChild(tarjetaProducto);
             }))
-        .catch();
-
+        .catch((error) => {
+            console.log(error);
+        });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    renderizarProductos();
+    renderizarProductosData();
     const carrito = obtenerCarrito();
     actualizarContador(carrito)
 })

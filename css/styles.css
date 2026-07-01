@@ -24,7 +24,7 @@ main {
     width: 80%;
     height: auto;
     margin: auto;
-    padding-bottom: 3rem;
+    padding: 3rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -164,11 +164,15 @@ p {
 .card img {
     width: 100%;
     object-fit: cover;
+    max-height: 40rem;
 }
 
 .card p {
     font-weight: 100;
     font-size: small;
+    height: 7rem;
+    overflow: scroll;
+    background-color:rgba(151, 149, 149, 0.12);
 }
 
 .contenedor-cards {
@@ -183,7 +187,43 @@ p {
 /*                                   CARRITO                                  */
 /* -------------------------------------------------------------------------- */
 
+.cardCarrito {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 15rem;
+    height: 30rem;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
+.cardCarrito h3 {
+    font-size: smaller;
+    text-align: center;
+}
+
+.cardCarrito img {
+    width: 50%;
+    object-fit: cover;
+    max-height: 20rem;
+}
+
+.cardCarrito button {
+    width: 10rem;
+}
+
+.contenedor-cardCarrito {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  CONTACTOS                                 */

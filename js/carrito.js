@@ -19,18 +19,18 @@ export const renderizarProductosDelCarrito = () => {
 
     productosCarrito.forEach((producto, i) => {
         const productoCarrito = document.createElement("article");
-        productoCarrito.classList.add("card");
+        productoCarrito.classList.add("cardCarrito");
 
         const nombre = document.createElement("h3");
-        nombre.textContent = producto.nombre;
+        nombre.textContent = producto.title;
 
         const img = document.createElement("img");
-        img.src = `../${producto.img}`
-        img.alt = producto.nombre;
+        img.src = `${producto.image}`
+        img.alt = producto.title;
 
         const precio = document.createElement("div");
         precio.classList.add("div-price")
-        precio.textContent = `$${producto.precio.toLocaleString()}`;
+        precio.textContent = `$${producto.price.toLocaleString()}`;
 
         const boton = document.createElement("button");
         boton.classList.add("btn");
